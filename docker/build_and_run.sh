@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# https://stackoverflow.com/a/41323079/6318316
+
 imageName=propensity-minimal:latest
 containerName=$(docker ps --filter "ancestor=${imageName}" -q --format '{{.Names}}')
 
