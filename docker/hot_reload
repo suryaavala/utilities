@@ -1,0 +1,1 @@
+fswatch -or --event=Updated ./my-project | xargs -n1 -I{} ./build_and_run.sh
